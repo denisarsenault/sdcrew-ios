@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14490.98" systemVersion="18E226" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Approach" representedClassName="Approach" syncable="YES" codeGenerationType="class">
+        <attribute name="airportName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="flightCrewMemberId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="isEVS" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="typeId" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+    </entity>
+    <entity name="Flight" representedClassName="Flight" syncable="YES" codeGenerationType="class">
+        <attribute name="aircraftProfileId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="blockStartDate" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="blockStopDate" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="color" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <attribute name="endLoc" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="flightId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="flightStartDate" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="flightStopDate" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="flightTime" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="isLogged" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="postedFlightId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="startLoc" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="trailNumber" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="tripId" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Fuel" representedClassName="Fuel" syncable="YES" codeGenerationType="class">
+        <attribute name="actualUp" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="fuelBurn" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="fuelIn" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="fuelOff" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="fuelOn" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="fuelOut" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="plannedUp" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="postedFlightId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="quantityTypeId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="upliftQuantityTypeId" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Note" representedClassName="Note" syncable="YES" codeGenerationType="class">
+        <attribute name="legNotes" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="postedFlightId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="rejectedTakeoffs" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Pilot" representedClassName="Pilot" syncable="YES" codeGenerationType="class">
+        <attribute name="firstName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="flightCrewMemberId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="flightId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="hold" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="instTime" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="landingsDay" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="landingsNight" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="lastName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="nightTime" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="postedFlightId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="role" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="takeOffDay" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="takeOffNight" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="track" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+    </entity>
+    <entity name="RemoteRaw" representedClassName="RemoteRaw" syncable="YES" codeGenerationType="class">
+        <attribute name="flight" optional="YES" attributeType="Transformable" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Approach" positionX="63" positionY="108" width="128" height="30"/>
+        <element name="Flight" positionX="105.515625" positionY="-30.06640625" width="121.94921875" height="255"/>
+        <element name="Fuel" positionX="63" positionY="81" width="128" height="195"/>
+        <element name="Note" positionX="81" positionY="117" width="128" height="90"/>
+        <element name="Pilot" positionX="63" positionY="72" width="128" height="30"/>
+        <element name="RemoteRaw" positionX="18" positionY="45" width="128" height="60"/>
+    </elements>
+</model>

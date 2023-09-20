@@ -1,0 +1,5 @@
+${PODS_ROOT}/Target Support Files/Pods-SDCrew/Pods-SDCrew-frameworks.sh
+${BUILT_PRODUCTS_DIR}/DLRadioButton/DLRadioButton.framework
+${BUILT_PRODUCTS_DIR}/OAuthSwift/OAuthSwift.framework
+${BUILT_PRODUCTS_DIR}/SAMKeychain/SAMKeychain.framework
+${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework
